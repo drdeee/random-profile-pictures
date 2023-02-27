@@ -15,3 +15,6 @@ jobs:
           yarn
           yarn exec tsc instagram.ts
           node ./instagram.js
+        env:
+          IG_USERNAME: ${{secrets:IG_USERNAME}}
+          IG_PASSWORD: ${{secrets:IG_PASSWORD}}
